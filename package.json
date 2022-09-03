@@ -1,5 +1,5 @@
 {
-  "name": "my-blogs-js",
+  "name": "my-blogs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -25,5 +25,17 @@
     "eslint-config-next": "12.2.5",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kev2Cod/Modern-Blog-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kev2Cod/Modern-Blog-App/issues"
+  },
+  "homepage": "https://github.com/Kev2Cod/Modern-Blog-App#readme"
 }

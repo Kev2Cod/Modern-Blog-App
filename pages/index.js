@@ -8,7 +8,7 @@ const posts = [
   { title: "React with tailwind", excerpt: "Learn React with Tailwind" },
 ];
 
-export default function Home({posts}) {
+export default function Home({ posts }) {
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
@@ -19,13 +19,13 @@ export default function Home({posts}) {
       <div className="grid lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
           {posts.map((post, index) => (
-            <PostCard post={post} key={post.title} />
+            <PostCard post={post.node} key={post.node.title} />
           ))}
         </div>
         <div className="lg:col-span-4 col-span-1">
           <div className="lg:sticky relative top-8">
             <PostWidget />
-            {/* <Categories />/ */}
+            <Categories />
           </div>
         </div>
       </div>
@@ -34,9 +34,9 @@ export default function Home({posts}) {
 }
 
 export async function getStaticProps() {
-  const posts = (await getPosts()) || []
+  const posts = (await getPosts()) || [];
 
-    return {
-      props: {posts}
-    }
+  return {
+    props: { posts },
+  };
 }
