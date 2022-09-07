@@ -9,8 +9,8 @@ const Author = ({ author }) => {
           unoptimized
           src={author.photo.url}
           alt={author.name}
-          height={80}
-          width={80}
+          height="80px"
+          width="80px"
           className="align-middle rounded-full"
         />
       </div>

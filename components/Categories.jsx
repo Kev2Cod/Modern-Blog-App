@@ -9,8 +9,6 @@ const Categories = () => {
     getCategories().then((newCategories) => setCategories(newCategories));
   }, []);
 
-  console.log(categories);
-
   return (
     <div className="bg-white shadow-lg rounded p-8 mb-12 ">
       <h3 className="text-cl mb-8 font-semibold border-b pb-4">Categories</h3>

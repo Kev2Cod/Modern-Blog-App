@@ -1,8 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
 import moment from "moment";
 import Link from "next/link";
-// import Image from "next/image";
 import { getRecentPosts, getSimilarPost } from "../services";
 
 const PostWidget = ({ categories, slug }) => {
@@ -19,8 +17,6 @@ const PostWidget = ({ categories, slug }) => {
       );
     }
   }, [slug]);
-
-  console.log("PostWidget: ", relatedPost);
 
   return (
     <div className="bg-white shadow-lg rounded p-8 mb-8 ">
